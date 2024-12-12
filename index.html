@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- header start -->
+  <nav class="desktop-nav">
+    <div class="logo">Saad Khan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- header end -->
+
+  <nav id="hamburger-nav">
+    <div class="logo">Saad Khan</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skill" onclick="toggleMenu()">skill</a></li>
+        <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- profile start -->
+  <section id="profile">
+    <div class="section_pic-container col-xl-6">
+      <img src="portfolio.png" alt="saad profile picture" />
+    </div>
+    <div class="section_text col-xl-6">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Saad Khan</h1>
+      <p>
+        <a href="#" class="typewrite" data-period="2000"
+          data-type='["I am a Frontend Developer", "I am a UI/UX Developer"]'>
+          <span class="wrap"></span>
+        </a>
+      </p>
+      <div class="btn-container">
+        <button type="button" class="btn btn-secondary btn-lg" onclick="window.open('SAAD KHAN.pdf')">
+          Download CV
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="my linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/saad-khan-75936620b/'" />
+
+        <img src="github.png" alt="my linkedin profile" class="icon"
+          onclick="location.href='https://github.com/saad8554656'" />
+
+        <img src="square-twitter-brands-solid.svg" alt="my linkedin profile" class="icon"
+          onclick="location.href='https://x.com/KhanSaad0306'" />
+      </div>
+    </div>
+  </section>
+  <!-- profile end -->
+
+  <!-- about start -->
+  <section id="about">
+    <p class="section__text__p1 text-center">Get To Know More</p>
+    <h1 class="title-me">About Me</h1>
+    <div class="section-container">
+      <div class="row">
+        <div class="section__pic-container col-xl-3">
+          <img src="Scan Me.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="col-xl-2"></div>
+        <div class="about-details-container col-xl-7">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.E in Computer Engineering - 7.26 CGPI <br />Diploma in Computer Engineering - 83.56 %</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="text-center pt-4">
+              <span>Welcome to My Portfolio! <br> </span>
+              <br>
+              Hello and welcome! I'm Saad Khan, a passionate UI/UX and front-end developer dedicated to crafting
+              intuitive and delightful digital experiences. With a keen eye for design and a strong command of front-end
+              technologies, I specialize in transforming ideas into visually compelling and user-friendly interfaces.
+              <br>
+              Driven by a love for creativity and problem-solving, I thrive on bridging the gap between design and
+              technology to deliver seamless user experiences. Whether it's creating responsive web designs or
+              optimizing user flows, my goal is to elevate digital interactions through thoughtful design and clean,
+              efficient code.
+              <br>
+
+              Explore my portfolio to see how I bring ideas to life and enhance user engagement through innovative UI/UX
+              solutions. Let's collaborate and create something extraordinary together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skill'" />
+  </section>
+  <!-- about end -->
+
+  <!-- skills section -->
+  <section id="skill">
+    <div class="container mt-5" id="skills">
+      <div class="header animate__animated wow animate__fadeInUp">
+        <h1 class="text-center">My Skills</h1>
+      </div>
+    </div>
+    <div class=" text-center mt-5">
+      <div class="row row-cols-2 row-cols-md-4 skill-row">
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="html.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">HTML 5</h3>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="css.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">CSS</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="tailwind.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">Tailwind</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="bootstrap.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">Bootstrap</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="javascript.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">Javascript</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="react.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">React.js</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col animate__animated wow animate__fadeInUpBig">
+          <div class="skill-box">
+            <div class="skill-tittle">
+              <div class="img">
+                <img src="python.png" class="skill-icon">
+              </div>
+              <h3 class="skill-text">Python</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Project'" />
+
+  </section>
+
+  <!-- skill end -->
+
+  <!-- project start -->
+
+  <section id="Project">
+    <div class="container mt-5">
+      <div class="header animate__animated wow animate__fadeInUp">
+        <h1 class="text-center">Projects</h1>
+      </div>
+  
+      <div class="menu-container">
+        <!-- Filter Buttons -->
+        <div class="text-center my-4 menu-filter">
+          <button class="filter-btn active" data-filter="*">All</button>
+          <button class="filter-btn" data-filter=".html">HTML5 & CSS3</button>
+          <button class="filter-btn" data-filter=".javascript">JAVASCRIPT</button>
+          <button class="filter-btn" data-filter=".ajax-json">AJAX & JSON</button>
+          <button class="filter-btn" data-filter=".react">REACT & REDUX</button>
+        </div>
+  
+        <!-- Project Items -->
+        <div class="row g-4 menu-column mt-5">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item html">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="img/Parallax effect.png" 
+                alt="Parallax effect" 
+                class="card-img-top" 
+                onclick="location.href='https://parallax-effect-saad.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Parallax effect</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item html">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="img/Jordan shoes.png" 
+                alt="Jordan" 
+                class="card-img-top" 
+                onclick="location.href='https://jordan-shoes-ui.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Jordan Shoes.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="img/home-loan.png" 
+                alt="Home Loan Calculator" 
+                class="card-img-top" 
+                onclick="location.href='https://home-loan.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Home Loan Calculator</h5>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/Movies web.png"
+                alt="Movie Web Panel"
+                class="card-img-top"
+                onclick="location.href='https://movie-web-saadkhan.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Movies Web Panel using Fetch</h5>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/Login.png"
+                alt="Login Page"
+                class="card-img-top"
+                onclick="location.href='https://login-registration-page-saadkhan.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Login Registration Page With validation </h5>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item react">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/MovieDB.png"
+                alt="MovieDB"
+                class="card-img-top"
+                onclick="location.href='https://moviedb-saad.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">MovieDB using React JS</h5>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/SIMPLE.png"
+                alt="Simple Interest Calculator"
+                class="card-img-top"
+                onclick="location.href='https://simple-interest-saadkhan.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Simple Interest Calculator</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item ajax-json">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/Screenshot 2024-12-03 210015.png"
+                alt="Simple Interest Calculator"
+                class="card-img-top"
+                onclick="location.href='https://categorywise.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-4">This is Fake Store API using AJAX</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item ajax-json">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/country-name.png"
+                alt="Simple Interest Calculator"
+                class="card-img-top"
+                onclick="location.href='https://search-country-using-ajax.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Explore the World: Rest Country API using AJAX</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item ajax-json">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/all products using ajax.png"
+                alt="All Products using ajax."
+                class="card-img-top"
+                onclick="location.href='https://all-product-onclick.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">All Products call using Ajax.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/celsius-to-fahrenheit.png"
+                alt="Simple Interest Calculator"
+                class="card-img-top"
+                onclick="location.href='https://celsius-fahrenheit-javascript.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Celsius to Fahrenheit</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/PCM cal.png"
+                alt="PCM Calculator"
+                class="card-img-top"
+                onclick="location.href='https://pcm-cal.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">PCM Calculator</h5>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/Product.png"
+                alt="Product Discount Calculator"
+                class="card-img-top"
+                onclick="location.href='https://product-discount-cal.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Product Discount Calculator</h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/full product using fetch.png"
+                alt="All Products using fetch."
+                class="card-img-top"
+                onclick="location.href='https://onclick-using-fetch.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">All Products call using fetch.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/full product using fetch.png"
+                alt="All Products using fetch."
+                class="card-img-top"
+                onclick="location.href='https://onclick-using-fetch.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">All Products call using fetch.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/category using fetch.png"
+                alt="categorywise using fetch."
+                class="card-img-top"
+                onclick="location.href='https://category-using-fetch.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Categorywise Products using fetch.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/Password hide and show.png"
+                alt="Password Hide & Show."
+                class="card-img-top"
+                onclick="location.href='https://pass-hide-show.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Password Hide & Show.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 menu-item javascript">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="img/tabs change.png"
+                alt="Tabs change."
+                class="card-img-top"
+                onclick="location.href='https://tabs-change.netlify.app/'"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3">Tabs change.</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- project end -->
+
+  <!-- contact start -->
+  <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+        src="/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:ks136647@gmail.com">ks136647@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+        src="/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+        />
+        <p><a href='https://www.linkedin.com/in/khan-mohd-saad-75936620b/'">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- contact end -->
+
+  <!-- footer start -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <!-- footer end -->
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+  <script>
+    
+$(document).ready(function () {
+  // Initialize Isotope
+  var $grid = $(".menu-column").isotope({
+    itemSelector: ".menu-item",
+    layoutMode: "fitRows"
+  });
+
+  // Filter items on button click
+  $(".menu-filter button").on("click", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // Add active class to the current button
+  $(".menu-filter button").on("click", function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+});
+  </script>
+</body>
+
+
+
+
+</html>
