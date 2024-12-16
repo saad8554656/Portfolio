@@ -54,10 +54,11 @@
 
   <!-- profile start -->
   <section id="profile">
-    <div class="section_pic-container col-xl-6">
-      <img src="portfolio.png" alt="saad profile picture" />
+    <div class=" col-xl-6 col-md-6 col-sm-12">
+      <img src="portfolio.png" alt="saad profile picture" class="section_pic-container" />
     </div>
-    <div class="section_text col-xl-6">
+    <div class="section_text col-xl-6 col-md-6 col-sm-12">
+      <div class="slider">
       <p class="section_text_p1">Hello, I'm</p>
       <h1 class="title">Saad Khan</h1>
       <p>
@@ -66,6 +67,7 @@
           <span class="wrap"></span>
         </a>
       </p>
+    </div>
       <div class="btn-container">
         <button type="button" class="btn btn-secondary btn-lg" onclick="window.open('SAAD KHAN.pdf')">
           Download CV
@@ -89,26 +91,26 @@
   <!-- profile end -->
 
   <!-- about start -->
-  <section id="about">
+  <div id="about">
     <p class="section__text__p1 text-center">Get To Know More</p>
     <h1 class="title-me">About Me</h1>
     <div class="section-container">
-      <div class="row">
-        <div class="section__pic-container col-xl-3">
+      <div class="row " style="text-align: center; display: flex; justify-content: center;">
+        <div class="section__pic-container col-xl-4">
           <img src="Scan Me.png" alt="Profile picture" class="about-pic" />
         </div>
-        <div class="col-xl-2"></div>
+        <div class="col-xl-1"></div>
         <div class="about-details-container col-xl-7">
           <div class="about-containers">
-            <div class="details-container">
+            <!-- <div class="details-container">
               <img src="education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
               <p>B.E in Computer Engineering - 7.26 CGPI <br />Diploma in Computer Engineering - 83.56 %</p>
-            </div>
+            </div> -->
           </div>
           <div class="text-container">
-            <p class="text-center pt-4">
-              <span>Welcome to My Portfolio! <br> </span>
+            <p class="text-justify  pt-4" style="text-align: justify;">
+              
               <br>
               Hello and welcome! I'm Saad Khan, a passionate UI/UX and front-end developer dedicated to crafting
               intuitive and delightful digital experiences. With a keen eye for design and a strong command of front-end
@@ -119,6 +121,9 @@
               optimizing user flows, my goal is to elevate digital interactions through thoughtful design and clean,
               efficient code.
               <br>
+              I have completed, <br>
+              <span style="text-align: justify;">B.E in Computer Engineering - 7.26 CGPI <br />Diploma in Computer Engineering - 83.56 %</span>
+              <br>
 
               Explore my portfolio to see how I bring ideas to life and enhance user engagement through innovative UI/UX
               solutions. Let's collaborate and create something extraordinary together!
@@ -128,7 +133,7 @@
       </div>
     </div>
     <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skill'" />
-  </section>
+  </div>
   <!-- about end -->
 
   <!-- skills section -->
@@ -139,8 +144,8 @@
         </div>
     </div>
     <div class="text-center mt-5">
-        <div class="row row-cols-2 row-cols-md-4 g-4 skill-row">
-            <div class="col animate__animated wow animate__fadeInUpBig">
+        <div class="row  skill-row">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -151,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="col animate__animated wow animate__fadeInUpBig">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -162,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="col animate__animated wow animate__fadeInUpBig">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -173,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="col animate__animated wow animate__fadeInUpBig">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -184,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="col animate__animated wow animate__fadeInUpBig">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -195,7 +200,7 @@
                 </div>
             </div>
 
-            <div class="col animate__animated wow animate__fadeInUpBig">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -206,7 +211,7 @@
                 </div>
             </div>
 
-            <div class="col animate__animated wow animate__fadeInUpBig">
+            <div class="col-6 col-xl-3 col-md-4 animate__animated wow animate__fadeInUpBig">
                 <div class="skill-box">
                     <div class="skill-tittle">
                         <div class="img">
@@ -524,7 +529,7 @@
   <!-- project end -->
 
   <!-- contact start -->
-  <section id="contact">
+  <div id="contact">
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
@@ -544,7 +549,7 @@
         <p><a href='https://www.linkedin.com/in/khan-mohd-saad-75936620b/'">LinkedIn</a></p>
       </div>
     </div>
-  </section>
+  </div>
   <!-- contact end -->
 
   <!-- footer start -->
@@ -565,9 +570,11 @@
 
 
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
   <script>
     
